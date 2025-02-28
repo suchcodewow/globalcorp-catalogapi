@@ -30,6 +30,4 @@ spec:
   type: service
   owner: catalogapiowner
   lifecycle: experimental
-#  system: yournamehere-system
-#  dependsOn:
-#    - component:default/yournamehere-service
+
