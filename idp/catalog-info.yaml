@@ -22,7 +22,7 @@ metadata:
       url: http://harness.io
   annotations:
     harness.io/pipelines: |
-      Build and Deploy: https://app.harness.io/ng/account/IFG41DWvSnaRLOVNB2uesg/module/cd/orgs/default/projects/globalcorp/pipelines/GoodApi/pipeline-studio?storeType=INLINE
+      Build and Deploy: https://workshop.harness.io/ng/account/IFG41DWvSnaRLOVNB2uesg/module/cd/orgs/default/projects/globalcorp/pipelines/GoodApi/pipeline-studio?storeType=INLINE
 
   tags:
     - globalcorp
