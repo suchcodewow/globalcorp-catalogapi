@@ -1,4 +1,17 @@
 apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: catalogapiowner
+  description: catalog owner
+spec:
+  type: business-unit
+  profile:
+    displayName: Catalog API Team
+    email: infrastructure@example.com
+    picture: https://example.com/groups/bu-infrastructure.jpeg
+
+---
+apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: catalogapi
