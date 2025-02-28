@@ -7,8 +7,7 @@ spec:
   type: business-unit
   profile:
     displayName: Catalog API Team
-    email: infrastructure@example.com
-    picture: https://example.com/groups/bu-infrastructure.jpeg
+    children: [backstage, other]
 
 ---
 apiVersion: backstage.io/v1alpha1
