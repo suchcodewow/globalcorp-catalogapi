@@ -7,7 +7,7 @@ spec:
   type: business-unit
   profile:
     displayName: Catalog API Team
-    children: [backstage, other]
+    children: other
 
 ---
 apiVersion: backstage.io/v1alpha1
