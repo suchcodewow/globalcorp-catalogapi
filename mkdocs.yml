@@ -1,4 +1,5 @@
 site_name: "CatalogApi"
+repo_url: https://github.com/suchcodewow/globalcorp-catalogapi
 
 nav:
   - Home: index.md
