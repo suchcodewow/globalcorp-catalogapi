@@ -1,0 +1,23 @@
+apiVersion: harness.io/v1
+kind: Component
+name: catalogapi
+identifier: catalogapi
+type: service
+owner: user:account/shawn.pearson@harness.io
+spec:
+  lifecycle: production
+  ownedBy:
+    - user:account/shawn.pearson@harness.io
+metadata:
+  annotations:
+    github.com/project-slug: suchcodewow/globalcorp-catalogapi
+    backstage.io/techdocs-ref: url:https://github.com/suchcodewow/globalcorp-catalogapi/tree/main
+    harness.io/pipelines: |
+      CI: *insert any pipeline url here*
+  links:
+    - url: https://www.suchcodewow.io
+      title: Workshop Home
+      icon: Dashboard
+  TestScore: "92"
+  tags:
+    - rubytests

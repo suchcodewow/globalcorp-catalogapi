@@ -1,0 +1,114 @@
+page:
+  name: EntityLayout
+  tabs:
+    - name: Overview
+      path: /
+      title: Overview
+      contents:
+        - component: EntityOrphanWarning
+        - component: EntityRelationWarning
+        - component: EntityProcessingErrorsPanel
+        - component: EntityAboutCard
+          specs:
+            props:
+              variant: gridItem
+            gridProps:
+              md: 6
+        - component: EntityScoreCard
+          specs:
+            gridProps:
+              md: 6
+        - component: EntityCatalogGraphCard
+          specs:
+            props:
+              variant: gridItem
+              height: 400
+            gridProps:
+              md: 6
+              xs: 12
+        - component: EntityLinksCard
+          specs:
+            props:
+              variant: gridItem
+              item: 400
+            gridProps:
+              md: 6
+        - component: EntityHasSubcomponentsCard
+          specs:
+            props:
+              variant: gridItem
+              height: 400
+            gridProps:
+              md: 8
+              xs: 12
+    - name: ci-cd
+      path: /ci-cd
+      title: CI/CD
+      contents:
+        - component: EntitySwitch
+          specs:
+            cases:
+              - if: isHarnessCiCdAvailable
+                content:
+                  component: EntityHarnessCiCdContent
+              - content:
+                  component: EmptyState
+                  specs:
+                    props:
+                      title: No CI/CD available for this entity
+                      missing: info
+                      description: You need to add an annotation to your component if you want to enable CI/CD for it. You can read more about annotations in Backstage by clicking the button below.
+    - name: Scorecard
+      path: /scorecard
+      title: Scorecard
+      contents:
+        - component: EntityScorecardContent
+    - name: API
+      path: /api
+      title: API
+      contents:
+        - component: EntityProvidedApisCard
+          specs:
+            gridProps:
+              md: 12
+        - component: EntityConsumedApisCard
+          specs:
+            gridProps:
+              md: 12
+    - name: Deps
+      path: /dependencies
+      title: Dependencies
+      contents:
+        - component: EntityDependsOnComponentsCard
+          specs:
+            props:
+              variant: gridItem
+            gridProps:
+              md: 12
+        - component: EntityConsumedApisCard
+          specs:
+            props:
+              variant: gridItem
+            gridProps:
+              md: 12
+    - name: EntityHarnessFeatureFlagContent
+      path: /feature-flag
+      title: Feature Flag
+      contents:
+        - component: EntityHarnessFeatureFlagContent
+    - name: TechDocs
+      path: /docs
+      title: Docs
+      contents:
+        - component: EntityTechdocsContent
+          specs:
+            children:
+              - component: TechDocsAddons
+                specs:
+                  children:
+                    - component: ReportIssue
+    - name: pull-requests
+      path: /pull-requests
+      title: Pull Requests
+      contents:
+        - component: EntityGithubPullRequestsContent
