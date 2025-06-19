@@ -1,10 +1,10 @@
-#metadata:
-annotations:
-  github.com/project-slug: suchcodewow/globalcorp-catalogapi
-  backstage.io/techdocs-ref: url:https://github.com/suchcodewow/globalcorp-catalogapi/tree/main
-  harness.io/pipelines: |
-    CI: *insert any pipeline url here*
-links:
-  - url: https://www.suchcodewow.io
-    title: Workshop Home
-    icon: Dashboard
+metadata:
+  annotations:
+    github.com/project-slug: suchcodewow/globalcorp-catalogapi
+    backstage.io/techdocs-ref: url:https://github.com/suchcodewow/globalcorp-catalogapi/tree/main
+    harness.io/pipelines: |
+      CI: *insert any pipeline url here*
+  links:
+    - url: https://www.suchcodewow.io
+      title: Workshop Home
+      icon: Dashboard
