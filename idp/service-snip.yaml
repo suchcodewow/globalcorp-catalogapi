@@ -5,6 +5,6 @@ metadata:
     harness.io/pipelines: |
       CI: *insert any pipeline url here*
   links:
-    - url: https://www.suchcodewow.io
+    - url: https://www.google.com
       title: Workshop Home
       icon: Dashboard
